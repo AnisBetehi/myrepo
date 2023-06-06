@@ -1,0 +1,437 @@
+.overlay-bg {
+    position: fixed;
+    inset: 0;
+}
+
+.categories-container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .category-title {
+        text-transform: uppercase;
+        font-size: 3rem;
+        color: $accent;
+    }
+
+    .food-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .food-item {
+            display: flex;
+            gap: 1rem;
+            width: 100%;
+
+            .image-container {
+
+                img {
+                    width: 200px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: .9rem;
+                }
+            }
+
+            .title-container {
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+
+                .main-title {
+                    font-size: 1.4rem;
+                    color: $accent;
+                    font-weight: 900;
+                }
+
+                .secondary-title {
+                    font-size: 1rem;
+                }
+            }
+
+            .prices-container {
+                display: flex;
+                gap: .3rem;
+                margin-right: auto;
+
+                .price-item {
+                    display: flex;
+                    flex-direction: column;
+
+                    .combo-title {
+                        color: $accent;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                    }
+
+                    .price {
+                        height: max-content;
+                        background-color: $accent;
+                        border-radius: .6rem;
+                        padding: .2rem 1rem;
+                        font-size: 1.2rem;
+                        color: white;
+
+                        .currency {
+                            margin-left: .2rem;
+                            font-size: .7rem;
+                        }
+                    }
+
+                    &:not(.is-combo) {
+                        .combo-title {
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+
+     
+        }
+
+    }
+
+    .fattah-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .fattah-item, .fattah-item-2 {
+
+            
+            .info-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .title-container {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    .main-title {
+                        font-size: 2.2rem;
+                        color: white;
+                    }
+
+                    .secondary-title {
+                        font-size: 1.5rem;
+                        color: white;
+                    }
+                }
+       
+            }
+
+            .prices-container {
+                display: flex;
+
+                .price-item {
+                    display: flex;
+                    flex-direction: column;
+                    padding-inline: 1rem;
+
+                    .size {
+                        color: $accent;
+                        font-size: 1.4rem;
+                    }
+
+                    .price {
+                        text-align: center;
+                        font-size: 2.3rem;
+                        font-weight: 900;
+
+                        .currency {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                .price-item:not(:last-child) {
+                    border-right: 1px solid black;
+                }
+            }     
+        }
+
+
+        .fattah-item {
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            line-height: 3rem;
+
+           .image-container {
+
+                img {
+                    width: 100%;
+                    max-height: 180px;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                    border-radius: .9rem;
+                }
+            }
+
+            .info-container {
+                .title-container {
+                    .main-title {
+                        color: $accent;
+                    }
+
+                    .secondary-title {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+
+        .fattah-item-2 {
+            position: relative;
+            background-color: $accent;
+            padding: 2rem;
+            border-radius: 2rem;
+            display: flex;
+            max-width: 70%;
+ 
+            .prices-container {
+
+                .price-item {
+
+                    .size {
+                        color: white;
+                    }
+
+                    .price {
+                        color: white;
+
+                        .currency {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+                .price-item:not(:last-child) {
+                    border-color: white;
+                }
+            } 
+            
+            .image-container {
+                position: absolute;
+                top: 50%;
+                right: -15%;
+                transform: translateY(-50%);
+
+                img {
+                    width: 100%;
+                    max-height: 180px;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                    border-radius: .9rem;
+                }
+            }
+
+        }
+    }
+}
+
+.side-items-list {
+    width: 100%;
+
+    .side-item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            .main-title {
+                font-weight: 900;
+                font-size: 1.4rem;
+            }
+
+            .secondary-title {
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+
+        .price-container {
+
+            .price {
+                font-size: 1.6rem;
+                font-weight: bolder;
+            }
+
+            .currency {
+                font-size: 1rem;
+                margin-inline: .3rem;
+            }
+        }
+
+        .border {
+            border-bottom: 1px solid black;
+            flex: 1;
+            margin-top: 1.8rem;
+        }
+    }
+}
+
+.drinks-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .drink-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-inline: 1rem;
+            flex: 1;
+            line-height: 2.5rem;
+
+            .title-container {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                .main-title {
+                    font-size: 2rem;
+                }
+
+                .secondary-title {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .price-container {
+                .price {
+                    text-align: center;
+                    font-size: 2.3rem;
+                    font-weight: 900;
+                    text-align: center;
+                }
+
+                .currency {
+                    font-size: 1.2rem;
+                    margin-left: .5rem;
+                }
+            }
+
+        &:not(:last-child) {
+            border-right: 1px solid black;
+        }
+    }
+}
+
+.information-page {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.shape {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: max(40vw, 400px);
+    height: max(60vh, 600px);
+}
+
+.company-info {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-end;
+
+    .socials {
+        display: flex;
+        gap: 2rem;
+
+        .qr-code {
+            height: min(100%, 150px);
+            aspect-ratio: 1;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+    
+        .hotline {
+            line-height: 4rem;
+            text-align: center;
+    
+            h3 {
+                font-size: 2.5rem;
+                color: $accent;
+            }
+            
+            span {
+                font-size: 5rem;
+                font-weight: bolder;
+            }
+        }
+
+        .social-accounts {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            > div {
+                display: flex;
+                align-items: flex-end;
+                gap: .2rem;
+
+                svg {
+                    font-size: 1.3rem;
+                    color: $accent
+                }
+            }
+        }
+
+    }
+
+    .addresses {
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        > div {
+            display: flex;
+            gap: .3rem;
+            font-size: 1.3rem;
+
+            svg {
+                color: $accent;
+                font-size: 3rem;    
+            }
+        }
+    }
+}
+
+.text-accent {
+    color: $accent;
+}
+
+
+
+
+
