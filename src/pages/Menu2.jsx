@@ -13,10 +13,9 @@ const Menu2 = () => {
       <div className='information-page'>
 
         <img className='overlay-bg' src={background} />
-
-        <img className='shape' src={shape} />
        
         <div className='company-info'>
+            <img className='shape' src={shape} />
             <div className='socials'>
 
                 <div className='qr-code'>
@@ -47,6 +46,8 @@ const Menu2 = () => {
             </div>
 
             <div className='addresses'>
+
+                    <h2 className='category-title'>Branches</h2>
 
                     <div>
                         <TiLocation />

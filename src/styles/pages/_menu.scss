@@ -11,17 +11,17 @@
     gap: 3rem;
 }
 
+.category-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: $accent;
+}
+
 .category-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-
-    .category-title {
-        text-transform: uppercase;
-        font-size: 3rem;
-        color: $accent;
-    }
 
     .food-list {
         width: 100%;
@@ -345,14 +345,6 @@
     gap: 3rem;
 }
 
-.shape {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: max(40vw, 400px);
-    height: max(60vh, 600px);
-}
-
 .company-info {
     display: flex;
     height: 100vh;
@@ -360,8 +352,16 @@
     gap: 2rem;
     justify-content: flex-end;
 
+    .shape {
+        position: relative;
+        left: -15%;
+        width: max(40vw, 800px);
+        height: max(60vh, 1000px);
+    }
+
     .socials {
         display: flex;
+        align-items: center;
         gap: 2rem;
 
         .qr-code {
@@ -410,18 +410,20 @@
 
     .addresses {
 
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-end;
+        gap: .4rem;
 
         > div {
+            float: left;
             display: flex;
             gap: .3rem;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
 
             svg {
                 color: $accent;
-                font-size: 3rem;    
+                font-size: 2rem;    
             }
         }
     }
