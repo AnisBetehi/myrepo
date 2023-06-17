@@ -16,11 +16,7 @@ export const sandwichList = [
             },
             {
                 isCombo: true,
-                price: 16
-            },
-            {
-                isCombo: true,
-                price: 88
+                price: 105
             }
         ],
     },
@@ -28,16 +24,16 @@ export const sandwichList = [
     {
         id: 2,
         arabic: 'شاورما فراخ',
-        english: 'Meat Shawarmer',
+        english: 'Chicken Shawarmer',
         image: shawarma2,
         prices: [
             {
                 isCombo: false,
-                price: 70
+                price: 65
             },
             {
                 isCombo: true,
-                price: 90
+                price: 95
             }
         ],
     },
@@ -45,16 +41,16 @@ export const sandwichList = [
     {
         id: 3,
         arabic: 'كباب ايراني',
-        english: 'Meat Shawarmer',
+        english: 'Kabab Irany',
         image: shawarma3,
         prices: [
             {
                 isCombo: false,
-                price: 70
+                price: 57
             },
             {
                 isCombo: true,
-                price: 90
+                price: 87
             }
         ],
     },
@@ -62,16 +58,16 @@ export const sandwichList = [
     {
         id: 4,
         arabic: 'سجق',
-        english: 'Meat Shawarmer',
+        english: 'Sausage',
         image: shawarma1,
         prices: [
             {
                 isCombo: false,
-                price: 70
+                price: 55
             },
             {
                 isCombo: true,
-                price: 90
+                price: 85
             }
         ],
     },
@@ -79,16 +75,16 @@ export const sandwichList = [
     {
         id: 5,
         arabic: 'شيش طاووق',
-        english: 'Meat Shawarmer',
+        english: 'Shish Tawook',
         image: shawarma3,
         prices: [
             {
                 isCombo: false,
-                price: 70
+                price: 55
             },
             {
                 isCombo: true,
-                price: 90
+                price: 85
             }
         ],
     },
@@ -96,7 +92,7 @@ export const sandwichList = [
     {
         id: 6,
         arabic: 'شاورمر حواوشي',
-        english: 'Meat Shawarmer',
+        english: 'Hawawshi Shawermer',
         image: shawarma2,
         prices: [
             {
@@ -105,7 +101,7 @@ export const sandwichList = [
             },
             {
                 isCombo: true,
-                price: 90
+                price: 95
             }
         ],
     },
@@ -113,12 +109,12 @@ export const sandwichList = [
     {
         id: 7,
         arabic: 'بطاطس شاورمر',
-        english: 'Meat Shawarmer',
+        english: 'Fries Shawermer',
         image: shawarma3,
         prices: [
             {
                 isCombo: false,
-                price: 70
+                price: 23
             },
         ],
     },
@@ -133,103 +129,104 @@ export const fattahList = [
         prices: [
             {
                 size: 'Large',
-                price: 60
+                price: 100
             },
             {
                 size: 'Small',
-                price: 30
+                price: 60
             }
         ],
     },
     {
         id: 2,
-        arabic: 'فته فراخ',
-        english: 'Fattah chicken',
+        arabic: 'فته لحم',
+        english: 'Fattah Beef',
         image: fattah1,
         prices: [
             {
                 size: 'Large',
-                price: 60
+                price: 110
             },
             {
                 size: 'Small',
-                price: 30
+                price: 68
             }
         ],
     },
     {
         id: 3,
-        arabic: 'فته فراخ',
-        english: 'Fattah chicken',
+        arabic: 'فته ميكس',
+        english: 'Fattah Mix',
         image: fattah1,
         prices: [
             {
                 size: 'Large',
-                price: 60
+                price: 100
             },
             {
                 size: 'Small',
-                price: 30
+                price: 68
             }
         ],
     },
 ]
 
-export const drinks = [
+
+export const sideItems = [
+
     {
         id: 1,
         arabic: 'مياه',
         english: 'Water',
-        price: 44
+        price: 8
     },
+
     {
         id: 2,
         arabic: 'مياه غازية',
         english: 'Soft Drink',
-        price: 44
-    },
-]
-
-export const sideItems = [
-    {
-        id: 1,
-        arabic: 'تبولة',
-        english: 'Teboula',
-        price: 23
+        price: 15
     },
 
     {
         id: 3,
         arabic: 'باكت بطاطس',
         english: 'French fries',
-        price: 55
+        price: 25
+    },
+    {
+        id: 1,
+        arabic: 'تبولة',
+        english: 'Teboula',
+        price: 25
+    },
+
+
+    {
+        id: 6,
+        arabic: 'خيار مخلل',
+        english: 'Pickles',
+        price: 10
     },
 
     {
         id: 4,
         arabic: 'ثومية',
         english: 'Garlic',
-        price: 54
+        price: 10
     },
 
     {
         id: 5,
         arabic: 'طحينة',
         english: 'Tahini',
-        price: 66
-    },
-
-    {
-        id: 6,
-        arabic: 'خيار مخلل',
-        english: 'Pickles',
-        price: 75
+        price: 10
     },
 
     {
         id: 7,
         arabic: 'اضافة جبنة',
         english: 'Extra cheese',
-        price: 22
+        price: 13
     },
 ]
