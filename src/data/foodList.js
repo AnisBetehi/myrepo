@@ -197,7 +197,7 @@ export const sideItems = [
     {
         id: 3,
         arabic: 'باكت بطاطس',
-        english: 'French fries',
+        english: 'French Fries',
         price: 25
     },
     {
