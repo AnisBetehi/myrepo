@@ -1,14 +1,20 @@
-import shawarma1 from '../assets/images/food/shawarma1.jpg'
-import shawarma2 from '../assets/images/food/shawarma2.jpg'
-import shawarma3 from '../assets/images/food/shawarma3.jpg'
-import fattah1 from '../assets/images/food/fattah1.jpg'
+import shawarmaMeat from '../assets/images/food/shawarma-meat.webp'
+import shawarmaChicken from '../assets/images/food/shawarma-chicken.webp'
+import sausage from '../assets/images/food/sausage.webp'
+import fattahMix from '../assets/images/food/fattah-mix.webp'
+import fattahChicken from '../assets/images/food/fattah-chicken.webp'
+import fattahMeat from '../assets/images/food/fattah-meat.webp'
+import hawawshi from '../assets/images/food/hawawshi.webp'
+import shishTawook from '../assets/images/food/shish-tawook.webp'
+import kebab from '../assets/images/food/kebab.webp'
+import placeholder from '../assets/images/food/logo-placeholder.png'
 
 export const sandwichList = [
     {
         id: 1,
         arabic: 'شاورما لحم',
         english: 'Meat Shawarmer',
-        image: shawarma1,
+        image: shawarmaMeat,
         prices: [
             {
                 isCombo: false,
@@ -25,7 +31,7 @@ export const sandwichList = [
         id: 2,
         arabic: 'شاورما فراخ',
         english: 'Chicken Shawarmer',
-        image: shawarma2,
+        image: shawarmaChicken,
         prices: [
             {
                 isCombo: false,
@@ -42,7 +48,7 @@ export const sandwichList = [
         id: 3,
         arabic: 'كباب ايراني',
         english: 'Kabab Irany',
-        image: shawarma3,
+        image: kebab,
         prices: [
             {
                 isCombo: false,
@@ -59,7 +65,7 @@ export const sandwichList = [
         id: 4,
         arabic: 'سجق',
         english: 'Sausage',
-        image: shawarma1,
+        image: sausage,
         prices: [
             {
                 isCombo: false,
@@ -76,7 +82,7 @@ export const sandwichList = [
         id: 5,
         arabic: 'شيش طاووق',
         english: 'Shish Tawook',
-        image: shawarma3,
+        image: shishTawook,
         prices: [
             {
                 isCombo: false,
@@ -93,7 +99,7 @@ export const sandwichList = [
         id: 6,
         arabic: 'شاورمر حواوشي',
         english: 'Hawawshi Shawermer',
-        image: shawarma2,
+        image: hawawshi,
         prices: [
             {
                 isCombo: false,
@@ -110,7 +116,7 @@ export const sandwichList = [
         id: 7,
         arabic: 'بطاطس شاورمر',
         english: 'Fries Shawermer',
-        image: shawarma3,
+        image: placeholder,
         prices: [
             {
                 isCombo: false,
@@ -125,7 +131,7 @@ export const fattahList = [
         id: 1,
         arabic: 'فته فراخ',
         english: 'Fattah chicken',
-        image: fattah1,
+        image: fattahChicken,
         prices: [
             {
                 size: 'Large',
@@ -141,7 +147,7 @@ export const fattahList = [
         id: 2,
         arabic: 'فته لحم',
         english: 'Fattah Beef',
-        image: fattah1,
+        image: fattahMeat,
         prices: [
             {
                 size: 'Large',
@@ -157,7 +163,7 @@ export const fattahList = [
         id: 3,
         arabic: 'فته ميكس',
         english: 'Fattah Mix',
-        image: fattah1,
+        image: fattahMix,
         prices: [
             {
                 size: 'Large',
