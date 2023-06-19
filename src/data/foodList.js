@@ -7,7 +7,7 @@ import fattahMeat from '../assets/images/food/fattah-meat.webp'
 import hawawshi from '../assets/images/food/hawawshi.webp'
 import shishTawook from '../assets/images/food/shish-tawook.webp'
 import kebab from '../assets/images/food/kebab.webp'
-import placeholder from '../assets/images/food/logo-placeholder.png'
+import logo from '../assets/images/logos/logo.png'
 
 export const sandwichList = [
     {
@@ -116,7 +116,7 @@ export const sandwichList = [
         id: 7,
         arabic: 'بطاطس شاورمر',
         english: 'Fries Shawermer',
-        image: placeholder,
+        image: logo,
         prices: [
             {
                 isCombo: false,
